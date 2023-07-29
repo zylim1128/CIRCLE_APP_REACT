@@ -15,7 +15,7 @@ const Home = () => {
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
-    }, 5000); // milliseconds
+    }, 3000); // milliseconds
   }, []);
 
   // add search term
