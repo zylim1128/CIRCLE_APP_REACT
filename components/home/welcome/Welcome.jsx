@@ -13,7 +13,7 @@ import styles from './welcome.style'
 import { icons, SIZES } from '../../../constants';
 
 // define the job types
-const jobTypes = ["Full-time", "Part-time", "Contractor"];
+// const jobTypes = ["Full-time", "Part-time", "Contractor"];
 
 const Welcome = ( { searchTerm, setSearchTerm, handleClick }) => {
   const router = useRouter();
@@ -21,32 +21,32 @@ const Welcome = ( { searchTerm, setSearchTerm, handleClick }) => {
   return (
     <View>
       <View style={styles.container}>
-        <Text style={styles.userName}> Hello John</Text>
-        <Text style={styles.welcomeMessage}> Find your perfect job</Text>
+        <Text style={styles.welcomeMessage}> CIRCLE </Text>
       </View>
 
       <View style={styles.searchContainer}>
         <View style={styles.searchWrapper}>
-          <TextInput
-            style={styles.searchInput}
-            // parse in the value of what you searching for
-            value={searchTerm}
-            onChangeText={(text) => setSearchTerm(text)}
-            placeholder="What are you looking for?"
-          />
+          <TouchableOpacity style={styles.searchBtn} onPress={(handleClick) => {}}>
+            <Image
+              source={icons.search}
+              resizeMode='contain'
+              style={styles.searchBtnImage}
+            />
+          </TouchableOpacity>
+            <TextInput
+              style={styles.searchInput}
+              // parse in the value of what you searching for
+              value={searchTerm}
+              onChangeText={(text) => setSearchTerm(text)}
+              maxLength={23}
+              placeholder="Seafrch event"
+            />
         </View>
 
         {/* need to parse handleClick into onPress so it handles the searchTerm*/}
-        <TouchableOpacity style={styles.searchBtn} onPress={(handleClick) => {}}>
-          <Image
-            source={icons.search}
-            resizeMode='contain'
-            style={styles.searchBtnImage}
-          />
-        </TouchableOpacity>
       </View>
 
-      <View style={styles.tabsContainer}>
+      {/* <View style={styles.tabsContainer}>
         <FlatList
           data = {jobTypes}
           renderItem={({ item }) => (
@@ -65,7 +65,7 @@ const Welcome = ( { searchTerm, setSearchTerm, handleClick }) => {
           contentContainerStyle={{ columnGap: SIZES.small }}
           horizontal
         />
-      </View>
+      </View> */}
     </View>
   )
 }
