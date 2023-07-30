@@ -16,20 +16,21 @@ const Home = ()  => {
               options={{
                 headerStyle: { backgroundColor: COLORS.lightWhite},
                 headerShadowVisible: false,
-                headerLeft: () => (
-                  <ScreenHeaderBtn iconUrl={icons.menu} dimension="60%" />
-                ),
-                headerRight: () => (
-                  <ScreenHeaderBtn iconUrl={images.profile} dimension="60%" />
-                ),
-                headerTitle: ""
+                // headerLeft: () => (
+                //   <ScreenHeaderBtn iconUrl={icons.menu} dimension="60%" />
+                // ),
+                // headerRight: () => (
+                //   <ScreenHeaderBtn iconUrl={images.profile} dimension="60%" />
+                // ),
+                headerTitle: "",
+                headerShown: false,
               }}
             />
 
             <ScrollView shows showsVerticalScrollIndicator={false}>
               <View
                 style={{
-                  flex: 1,
+                  //flex: 1,
                   padding: SIZES.medium
                 }}
               >
