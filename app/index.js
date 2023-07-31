@@ -50,7 +50,15 @@ const Home = () => {
                 }
               }}
             />
-          </View>
+            <View style={{ marginTop: 20 }}></View>
+              <Text style={{ fontSize: 24, fontWeight: 'bold', marginBottom: 10 }}>
+               Upcoming Events
+              </Text>
+              <View style={{ backgroundColor: 'white', padding: 10 }}></View>
+                <Text>Event 1</Text>
+                <Text>Event 2</Text>
+              </View>
+             
         </ScrollView>
       </SafeAreaView>
     );
