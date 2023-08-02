@@ -39,7 +39,7 @@ const Welcome = ( { searchTerm, setSearchTerm, handleClick }) => {
               value={searchTerm}
               onChangeText={(text) => setSearchTerm(text)}
               maxLength={23}
-              placeholder="Seafrch event"
+              placeholder="Search event"
             />
         </View>
 

@@ -12,6 +12,7 @@ const styles = StyleSheet.create({
     color: COLORS.secondary,
   },
   welcomeMessage: {
+    fontWeight: "bold",
     fontFamily: FONT.bold,
     fontSize: SIZES.xLarge,
     color: COLORS.UWpurple,
